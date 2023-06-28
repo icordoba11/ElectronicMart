@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+/*General classes */
+body {
+  font-size: 18px;
+}
+h1 {
+  font-size: 2.1875rem;
+  font-family: "Gruppo", sans-serif;
+}
+
+/*Header container*/
+.header {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  overflow-wrap: normal;
+}
+/*Discount and language bar*/
+#top-bar {
+  display: grid;
+  grid-template-columns: 8fr 1fr;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.144);
+  padding: 5px;
+  height: 50px;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.dropdown button {
+  background-color: transparent;
+  border-color: transparent;
+}
+.dropdown button:hover {
+  background-color: gold;
+  border-color: transparent;
+  border-radius: 80px;
+}
+
+#dota {
+  color: #fc0b3b;
+  font-size: 3.125rem;
+}
+
+/*Sub header container*/
+
+.subheader {
+  display: grid;
+  grid-template-columns: 1fr 3fr 0.5fr;
+  padding: 0px 100px 0px 100px;
+  align-items: center;
+  height: 100px;
+}
+
+/*Search container*/
+.search {
+  display: grid;
+  align-items: center;
+}
+/*input search container*/
+.input-search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input-search {
+  width: 70%;
+  height: 50px;
+  border-radius: 40px 0px 0px 40px;
+  border-color: rgba(255, 217, 0, 0.692);
+  max-width: 800px;
+}
+
+.button-search {
+  border-radius: 0px 40px 40px 0px;
+  border-color: rgba(255, 217, 0, 0.692);
+  background-color: rgba(255, 217, 0, 0.692);
+  width: 120px;
+}
+
+.icon-search {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+}
+/*Section 1 */
+
+.section1 {
+  display: grid;
+  grid-template-columns: 1.5fr 5fr;
+  padding: 0px 100px 0px 100px;
+}
+
+.btn-group button:hover {
+  background-color: #fc0b3b;
+}
+
+.position-drop-down {
+  background-color: transparent;
+}
+
+.navLink {
+  text-decoration: none;
+  padding-left: 15px;
+  color: black;
+}
+.navLink:hover {
+  background-color: #fc0b3b1c;
+}
+
+/*vertical nav container*/
+.vertical-nav-s1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+}
+/*Vertical navbar elements*/
+
+.fake-button {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px 5px 0px 0px;
+  border: 1px solid #fc0b3b;
+  background-color: #fc0b3b;
+  color: white;
+}
+/*Equal width of container all categories*/
+.more-width-container {
+  width: 200px;
+}
+
+.vertical-navBar {
+  display: block;
+  padding: 10px;
+  text-align: start;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+}
+/*Horizontal navBar container*/
+.hor-navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.navLink-hor {
+  text-decoration: none;
+  padding-left: 15px;
+  color: black;
+}
+
+/*Carrousel under horizontal navBar*/
+.carousel-inner {
+  height: 410px;
+}
+
+.carousel-inner img {
+  height: 410px;
+}
+.carousel-item img {
+  border-radius: 10px;
+}
+/*Section 2*/
+.section2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 50px 100px 0px 100px;
+}
+
+/*Icons Section 2*/
+
+.icon-sec2 {
+  border-right: 1px solid rgba(0, 0, 0, 0.089);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+/*Section 3*/
+.section3 {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding: 50px 100px 0px 100px;
+  column-gap: 5px;
+}
+
+/*Section 4*/
+
+.section4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 100px 0px 100px;
+}
+
+.sec4-navbar {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
+}
+
+.section4 div h1 {
+  font-family: "Gruppo", sans-serif;
+}
+
+/*Section 5*/
+.section5 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 30px 100px 0px 100px;
+  justify-content: space-between;
+}
+
+.section5 div img {
+  display: flex;
+  margin: auto;
+}
+
+.card-extra {
+  display: grid;
+  justify-content: space-between;
+}
+/*Section 6*/
+.section6 {
+  display: grid;
+  grid-template-areas:
+    "img img2 img3 "
+    "img4 img4 img4";
+  padding: 50px 100px 0px 100px;
+  justify-content: space-between;
+}
+
+.offer-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.offer {
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  border: 1px solid rgba(0, 0, 0, 0.164);
+  width: 550px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.offer-text {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.text {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  row-gap: 0px;
+}
+/*Footer container*/
+#footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 50px 100px 50px 100px;
+  justify-content: space-between;
+  font-family: "Gruppo", sans-serif;
+  background-color: rgba(128, 128, 128, 0.123);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+}
+/*Footer elements*/
+.elements-footer {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
+#el-footer-extra {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 5px;
+}
+
+#payment-methods {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+/*Home*/
+.home-country {
+  display: flex;
+  flex-direction: column;
+}
